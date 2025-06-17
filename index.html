@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinar número</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .oculto {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container forma">
+        <label for="numero">Escribe un número entre 1 y 500:</label>
+        <input type="number" id="numero" min="1" max="500" required>
+        <p>
+            <button type="button" id="btnAdivinar" onclick="adivinar()">❓Adivinar</button>
+        </p>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="./js/juego.js"></script>
+        
+</body>
+</html>
