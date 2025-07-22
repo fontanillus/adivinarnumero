@@ -42,3 +42,61 @@ button {
     transition: background-color 0.3s;
 }
 
+.oculto {
+    display: none;
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        width: 75%;
+        /* Reduce the width on smaller screens */
+        margin-top: 15%;
+        /* Adjust the margin for better centering */
+    }
+
+    input {
+        padding-right: 10%;
+        /* Adjust input padding for smaller screens */
+    }
+
+    button {
+        margin: 30px 50px;
+        /* Reduce the margin for smaller devices */
+        padding: 8px 16px;
+        /* Smaller padding for buttons */
+    }
+}
+
+/* Tablets and Portrait Mode */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .container {
+        width: 60%;
+        /* Adjust container width for tablets */
+    }
+
+    input {
+        padding-right: 15%;
+        /* Adjust padding for input */
+    }
+
+    button {
+        margin: 40px 80px;
+        /* Adjust button spacing */
+        padding: 9px 18px;
+        /* Slightly smaller padding */
+    }
+}
+
+/* Landscape Mode on Mobile Devices */
+@media (max-width: 768px) and (orientation: landscape) {
+    .container {
+        width: 80%;
+        /* Make the container even wider in landscape */
+    }
+
+    button {
+        margin: 20px 40px;
+        /* Adjust margins to make the buttons more compact */
+    }
+}
